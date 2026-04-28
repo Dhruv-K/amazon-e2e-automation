@@ -99,5 +99,3 @@ jobs:
     - run: playwright install --with-deps chromium
     - run: pytest -n auto --headed=false
 ```
-
-Built for SDET interviews - production-grade, parallel-ready automation.
