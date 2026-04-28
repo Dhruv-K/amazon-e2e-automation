@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "amazon-playwright-tests"
+version = "0.1.0"
+description = "Automated tests for Amazon product search and cart functionality using Playwright and pytest"
+authors = [{name = "Senior SDET", email = "sdet@example.com"}]
+dependencies = []
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-v --headed --browser chromium"
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
